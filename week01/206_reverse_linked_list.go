@@ -1,5 +1,7 @@
 package week01
 
+import "fmt"
+
 /**
  * Definition for singly-linked list.
  */
@@ -16,6 +18,9 @@ func reverseLinkedList(head *ListNode) *ListNode {
 	for head != nil {
 		// 暂存
 		nextNode := head.Next
+		fmt.Println("head.Next: ", head.Next)
+		fmt.Println("last: ", last)
+
 		// 改一边
 		head.Next = last
 		// last , head 向后移动一位

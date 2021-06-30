@@ -27,3 +27,11 @@ func TestReverseList(t *testing.T) {
 	}
 
 }
+
+func TestSplitString(t *testing.T) {
+
+	s := "1lks"
+
+	t.Log("s[0]: ", s[:1])
+	t.Log(s[:1] > "h")
+}
